@@ -8,7 +8,8 @@ Vagrant.configure(VAGRANT_API_VERSION) do |config|
   
   config.ssh.insert_key = false
 
-  config.vm.network "forwarded_port", guest: 80, host: 9090
+  config.vm.network "forwarded_port", guest: 80, host: 8080
+  #config.vm.network "forwarded_port", guest: 80, host: 9090
   config.vm.network "forwarded_port", guest: 9000, host: 9000
   config.vm.provision :shell, inline: "cp -f /vagrant/nginx.repo /etc/yum.repos.d/."
 
