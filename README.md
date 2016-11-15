@@ -8,3 +8,4 @@ This is a very basic php-fpm ansible nginx vagrant box.
 
 Improvements should include a more robust, best practices ansible layout and using other kinds of vm.box
 
+To use: `vagrant up --provision`
